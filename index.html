@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Game</title>
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/9e1fd2081c.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="firstBar">
+        <div class="texto">
+          <h3>Codigo escolhido:</h3>
+          <h1 id="corRGB"></h1>
+          <h3>Adivinhe a Cor</h3>
+        </div>
+      </div>
+
+      <div class="secondBar">
+        <p id="chances">Chances:</p>
+      </div>
+
+      <table class="buttons">
+        <tr>
+          <td onclick="verificaBotao(this)" id="blocoUm" class="btn"></td>
+          <td onclick="verificaBotao(this)" id="blocoDois" class="btn"></td>
+          <td onclick="verificaBotao(this)" id="blocoTres" class="btn"></td>
+        </tr>
+
+        <tr>
+          <td onclick="verificaBotao(this)" id="blocoQuatro" class="btn"></td>
+          <td onclick="verificaBotao(this)" id="blocoCinco" class="btn"></td>
+          <td onclick="verificaBotao(this)" id="blocoSeis" class="btn"></td>
+        </tr>
+      </table>
+
+      <div id="result">
+        <h1 id="resultText"></h1>
+        <p id="tenteNovamente"></p>
+        <button onclick="RBGColor()" id="tryAgain">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9e1fd2081c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
